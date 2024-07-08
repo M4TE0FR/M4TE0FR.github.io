@@ -2,6 +2,7 @@
     font-family: Poppins;
    
     overflow: hidden;
+    animation: load-in 1s ease forwards; 
 }
 body {
     font-family: Arial, sans-serif;
@@ -20,6 +21,16 @@ body {
     z-index: -2;
     transform: translate(-50%, -50%);
     
+}
+@keyframes load-in {
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+        
+    }
 }
 @keyframes fade-in {
     from {
@@ -64,6 +75,14 @@ main {
     font-weight: 600; 
     font-size: 100px;
     height: 400px;
+    color: white !important;
+}
+.name h3 {
+    margin: 0; 
+    font-family: Poppins;
+    font-weight: 550; 
+    font-size: 30px;
+    transform: translateY(-270px);
     color: white !important;
 }
 
