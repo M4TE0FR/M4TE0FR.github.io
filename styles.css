@@ -1,0 +1,160 @@
+* {
+    font-family: Poppins;
+   
+    overflow: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black !important;
+}
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    transform: translate(-50%, -50%);
+    
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+header {
+    
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    text-align: center; 
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    
+}
+
+.name h2 {
+    margin: 0; 
+    font-family: Poppins;
+    font-weight: 600; 
+    font-size: 100px;
+    height: 400px;
+    color: white !important;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px;
+    top: -30px; 
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    top: -30px;
+}
+
+.social-icons img {
+    width: 30px; 
+}
+
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    position: relative;
+    transition: background-color 0.3s;
+    z-index: 1;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #fff;
+    transition: width 0.3s ease;
+    transition-delay: 0.2s;
+    z-index: 1;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #fff;
+}
+
+#muteButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    z-index: 1;
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
